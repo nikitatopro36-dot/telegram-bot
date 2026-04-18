@@ -282,7 +282,7 @@ async def captcha(update: Update, context: ContextTypes.DEFAULT_TYPE):
     if update.message.text.isdigit() and int(update.message.text) == row[0]:
         cursor.execute("UPDATE users SET joined=1, status='done' WHERE user_id=?", (user.id,))
         conn.commit()
-        await update.message.reply_text("🎉 Ты участвуешь!")
+        await update.message.reply_text("🎉 Ты участвуешь!!!")
 
 
 # АДМИН
