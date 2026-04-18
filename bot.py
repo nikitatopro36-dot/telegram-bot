@@ -356,7 +356,7 @@ async def manual_win_cmd(update: Update, context: ContextTypes.DEFAULT_TYPE):
     msg = await spin_animation(update.message, "🎰 Выбираем победителя...")
 
     try:
-        await context.bot.send_message(user[0], "🎉 Ты выиграл!")
+        await context.bot.send_message(user[0], "🎉 Ты выиграл!!!")
     except:
         pass
 
